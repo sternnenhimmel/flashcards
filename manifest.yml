@@ -2,6 +2,5 @@
 applications:
 - name: leon-flashcards #Must be unique
   memory: 128M
-  instances: 1
-  buildpack: nodejs_buildpack
+  buildpack: https://github.com/heroku/heroku-buildpack-nodejs
   command:  node app.js

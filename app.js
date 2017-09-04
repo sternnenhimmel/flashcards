@@ -30,5 +30,7 @@ app.use((err, req, res, next) => {
     res.render('error', { error: err })
 })
 
+var port = (process.env.VCAP_APP_PORT || 3000)
+var host = (process.env.VCAP_APP_HOST || 'localhost')
 
-app.listen(3000)
+app.listen(port, host)
