@@ -1,0 +1,7 @@
+---
+applications:
+- name: leon-flashcards #Must be unique
+  memory: 128M
+  instances: 1
+  buildpack: nodejs_buildpack
+  command:  node app.js
