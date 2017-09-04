@@ -1,0 +1,10 @@
+extends layout.pug
+block content
+    section#content
+            h2= text
+            if hint
+                p
+                    i hints: #{hint}
+            a(href=`${id}?side=${buttonUrl}`)= buttonDisplay
+            br
+            a(href='/cards') next card

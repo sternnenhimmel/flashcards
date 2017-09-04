@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        title homepage
+    body
+        h1 welcome to flash card
+            if name
+                p #{name}
+                form(action="/goodbye", method="get")
+                    input(type="submit", value = "goodbye")
+            else
+                form(action="/login", method="post")
+                    input(type="submit", value = "login")
+        ul
+            li first card
+            li second card
+            li third card
